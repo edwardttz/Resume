@@ -106,6 +106,7 @@ div.exp-content {
 /* littlethings.html*/
 ul.items {
 	padding-left: 16px;
+	text-align: left;
 }
 ul.itemList {
 	list-style-type: none;
