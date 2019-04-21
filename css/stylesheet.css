@@ -99,6 +99,7 @@ label.exp-margin {
 }
 div.exp-content {
 	overflow-y: scroll;
+	text-align: left;
 	height: 25em;
 }
 /* life.html*/
