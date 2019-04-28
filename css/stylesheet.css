@@ -23,6 +23,9 @@ hr {
 a:hover{
 	text-decoration: none;
 }
+li {
+	margin-bottom: 4px;
+}
 @media only screen and (min-width: 1044px) {
 	div#title {
 		padding-left: 8%;
@@ -53,6 +56,9 @@ div.cfooter {
 }
 div.alignment {
 	margin-left: 40.7em;
+}
+b.bold {
+	color: #c06014;
 }
 /* Generic */
 /* life.html*/
@@ -98,15 +104,16 @@ label.exp-margin {
 	margin: 0.5em 0 0 0.8em;
 }
 div.exp-content {
-	overflow-y: scroll;
 	text-align: left;
-	height: 25em;
+	font-size: 14px;
+}
+#bobo_margin {
+	margin-top: 0.5em;
 }
 /* life.html*/
 /* littlethings.html*/
 ul.items {
 	padding-left: 16px;
-	text-align: left;
 }
 ul.itemList {
 	list-style-type: none;
