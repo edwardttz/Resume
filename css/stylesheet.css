@@ -24,7 +24,7 @@ a:hover{
 	text-decoration: none;
 }
 li {
-	margin-bottom: 4px;
+	margin-bottom: 5px;
 }
 @media only screen and (min-width: 1044px) {
 	div#title {
@@ -83,6 +83,9 @@ tr.image-row {
 label.name {
 	font-weight: 600;
 	font-size: larger;
+}
+label.name.small-modal-margin {
+	margin-top: 8px;
 }
 label.sub-name {
 	font-weight: 600;
