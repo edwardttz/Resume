@@ -132,13 +132,6 @@ ul.itemList li {
 	background-color: #fae7d8ff;
 	font-size: 14px;
 }
-img.schoolImg {
-	height: 150px;
-	border: solid black 1px;
-	position: relative;
-	left: 1px;
-	top: 1px;
-}
 label.schoolLabel {
 	font-weight: 700;
 	font-size: large;
