@@ -45,9 +45,12 @@ div.exp-container {
 	border: solid 2px #c06014;
 	border-radius: 15px;
 	float: left;
-	margin: 0 20px 19px 0;
+	margin: 16px 16px 0 0;
 	padding-bottom: 4px;
 	text-align: center;
+}
+.h4-exp {
+	margin-bottom: -1px
 }
 div.exp-title {
 	width: 100%;
