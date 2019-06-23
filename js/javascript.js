@@ -14,8 +14,9 @@ $(document).ready(function() {
 		$(".link-logo").toggleClass('col-2 col-12');
 	}
 	if(bodyWidth < 767) {
-		$(".sidenav").addClass('d-none');	
-		$(".main").toggleClass('col-9 col-12');	
+		$(".sidenav").addClass('d-none');
+		$(".main").toggleClass('col-9 col-12');
+		$(".modal-logo").removeClass('float-left');
 	}
 });
 
@@ -34,8 +35,8 @@ $(window).on( "orientationchange", function(event) {
 			$(".link-logo").toggleClass('col-12 col-2');
 		}
 		if(bodyLength > 767) {
-			$(".sidenav").removeClass('d-none');	
-			$(".main").toggleClass('col-12 col-9');	
+			$(".sidenav").removeClass('d-none');
+			$(".main").toggleClass('col-12 col-9');
 		}
 	} else {	
 		if (footerLength < bodyWidth) {
@@ -48,8 +49,9 @@ $(window).on( "orientationchange", function(event) {
 			$(".link-logo").toggleClass('col-2 col-12');
 		}
 		if(bodyWidth < 767) {
-			$(".sidenav").addClass('d-none');	
-			$(".main").toggleClass('col-9 col-12');	
+			$(".sidenav").addClass('d-none');
+			$(".main").toggleClass('col-9 col-12');
+			$(".modal-logo").removeClass('float-left');
 		}
 	}
 });
