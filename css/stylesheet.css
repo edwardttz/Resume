@@ -10,22 +10,18 @@ label {
 hr {
 	border-color: #CDCDCD;
 }
-a:hover {
-	text-decoration: none;
-}
 a.nav-link:hover {
-	text-decoration: #c06014;
+	color: #c06014;
 }
 .label {
 	font-size: large;
 	font-weight: 700;
 }
+.left-padding-thick {
+	padding-left: 60px;
+}
 h4 {
 	font-weight: 600;
-}
-div.cfooter {
-	font-weight: 700;
-	font-size: large;
 }
 @media only screen and (min-device-width: 576px) {
   div.link-logo {
@@ -39,10 +35,11 @@ div.cfooter {
 section {
 	margin-bottom: 24px;
 }
+
 /* Generic */
 /* life.html*/
 div.exp-container {
-	width: 212px;
+	width: 190px;
 	border: solid 2px #c06014;
 	border-radius: 15px;
 	float: left;
@@ -53,13 +50,10 @@ div.exp-container {
 .h4-exp {
 	margin-bottom: -1px
 }
-div.exp-title {
-	width: 100%;
-}
 label.name.small-modal-margin {
 	margin-top: 8px;
 }
-label.sub-name {
+.sub-bold {
 	font-weight: 600;
 	font-size: large;
 }
@@ -75,6 +69,9 @@ div.modal_container {
 div.exp-content {
 	text-align: left;
 	font-size: 14px;
+}
+ul.items {
+	text-align: left;
 }
 /* life.html*/
 

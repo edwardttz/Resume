@@ -8,11 +8,14 @@ $(document).ready(function() {
 		footer.css("bottom", "0px");
 		footer.css("width", "100%");
 	}
-
 	bodyWidth = body.innerWidth();
 	if(bodyWidth < 576) {
 		$(".cfooter").toggleClass('col-10 col-12');
 		$(".link-logo").toggleClass('col-2 col-12');
+	}
+	if(bodyWidth < 767) {
+		$(".sidenav").addClass('d-none');	
+		$(".main").toggleClass('col-9 col-12');	
 	}
 });
 
@@ -30,6 +33,10 @@ $(window).on( "orientationchange", function(event) {
 			$(".cfooter").toggleClass('col-12 col-10');
 			$(".link-logo").toggleClass('col-12 col-2');
 		}
+		if(bodyLength > 767) {
+			$(".sidenav").removeClass('d-none');	
+			$(".main").toggleClass('col-12 col-9');	
+		}
 	} else {	
 		if (footerLength < bodyWidth) {
 			footer.css("position", "absolute");
@@ -39,6 +46,10 @@ $(window).on( "orientationchange", function(event) {
 		if(bodyWidth < 576) {
 			$(".cfooter").toggleClass('col-10 col-12');
 			$(".link-logo").toggleClass('col-2 col-12');
+		}
+		if(bodyWidth < 767) {
+			$(".sidenav").addClass('d-none');	
+			$(".main").toggleClass('col-9 col-12');	
 		}
 	}
 });
