@@ -8,7 +8,7 @@ $(document).ready(function() {
 		footer.css("bottom", "0px");
 		footer.css("width", "100%");
 	}
-	bodyWidth = body.innerWidth();
+	var bodyWidth = body.innerWidth();
 	if(bodyWidth < 576) {
 		$(".cfooter").toggleClass('col-10 col-12');
 		$(".link-logo").toggleClass('col-2 col-12');
@@ -31,9 +31,9 @@ $(window).on( "orientationchange", function(event) {
 	// This is for footer to be at the bottom of the page instead of the screen
 	var body = $("body");
 	var footer = $("footer");
-	footerLength = footer.position().top + footer.innerHeight();
-	bodyLength = body.innerHeight();
-	bodyWidth = body.innerWidth();
+	var footerLength = footer.position().top + footer.innerHeight();
+	var bodyLength = body.innerHeight();
+	var bodyWidth = body.innerWidth();
   	if (bodyWidth < bodyLength) {
 		footer.removeAttr("style");
 		footer.css("background-color", "#CDCDCD");
@@ -72,5 +72,22 @@ $(window).on( "orientationchange", function(event) {
 			$(".modal-logo").removeClass('float-left');
 			$(".title-content").removeClass('float-left');
 		} 
+	}
+});
+
+$(document).scroll(function() {
+	var body = $("body");
+	var y = $(document).scrollTop();
+	var bodyWidth = body.innerWidth();
+	var header = $(".sidenav");
+	var main = $(".main");
+	if(bodyWidth > 766) {
+		if(y >= 792)  {
+	        header.css({"position": "fixed", "top" : "8px"});
+	        main.css({"margin-left": "285px"});
+	    } else {
+	        header.css("position", "relative");
+	        main.css({"margin-left": "0px"});
+	    }
 	}
 });
