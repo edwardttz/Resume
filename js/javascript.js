@@ -13,11 +13,18 @@ $(document).ready(function() {
 		$(".cfooter").toggleClass('col-10 col-12');
 		$(".link-logo").toggleClass('col-2 col-12');
 	}
+	// This is for responsiveness of the sidebar
 	if(bodyWidth < 767) {
 		$(".sidenav").addClass('d-none');
 		$(".main").toggleClass('col-9 col-12');
-		$(".modal-logo").removeClass('float-left');
+		
 	}
+	// This is for responsiveness of the modal
+	var model_width = $(".modal-content").width();
+	if(model_width < 515) {
+		$(".modal-logo").removeClass('float-left');
+		$(".title-content").removeClass('float-left');
+	} 
 });
 
 $(window).on( "orientationchange", function(event) {
@@ -38,6 +45,12 @@ $(window).on( "orientationchange", function(event) {
 			$(".sidenav").removeClass('d-none');
 			$(".main").toggleClass('col-12 col-9');
 		}
+		// This is for responsiveness of the modal
+		var model_width = $(".modal-content").width();
+		if(model_width < 515) {
+			$(".modal-logo").removeClass('float-left');
+			$(".title-content").removeClass('float-left');
+		} 
 	} else {	
 		if (footerLength < bodyWidth) {
 			footer.css("position", "absolute");
@@ -53,5 +66,11 @@ $(window).on( "orientationchange", function(event) {
 			$(".main").toggleClass('col-9 col-12');
 			$(".modal-logo").removeClass('float-left');
 		}
+		// This is for responsiveness of the modal
+		var model_width = $(".modal-content").width();
+		if(model_width < 515) {
+			$(".modal-logo").removeClass('float-left');
+			$(".title-content").removeClass('float-left');
+		} 
 	}
 });
