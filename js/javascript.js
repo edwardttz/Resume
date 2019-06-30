@@ -17,7 +17,9 @@ $(document).ready(function() {
 	if(bodyWidth < 767) {
 		$(".sidenav").addClass('d-none');
 		$(".main").toggleClass('col-9 col-12');
-		
+	}
+	if(bodyWidth > 767 & bodyWidth < 1204) {
+		$(".main").css({"padding-left": "60px"});
 	}
 	// This is for responsiveness of the modal
 	var model_width = $(".modal-content").width();
@@ -44,6 +46,9 @@ $(window).on( "orientationchange", function(event) {
 		if(bodyLength > 767) {
 			$(".sidenav").removeClass('d-none');
 			$(".main").toggleClass('col-12 col-9');
+			if(bodyLength < 1204) {
+				$(".sidenav").css('margin-right', "40px");		
+			}
 		}
 		// This is for responsiveness of the modal
 		var model_width = $(".modal-content").width();
@@ -86,6 +91,7 @@ $(document).scroll(function() {
 	if(bodyWidth > 766) {
 		if(y >= start)  {
 	        header.css({"position": "fixed", "top" : "8px"});
+	        main.css({"padding-left": "0px"});
 	        if(bodyWidth > 1024) {
 	        	main.css({"margin-left": "285px"});
 	        } else {
@@ -94,6 +100,7 @@ $(document).scroll(function() {
 	    } else {
 	        header.css("position", "relative");
 	        main.css({"margin-left": "0px"});
+	        main.css({"padding-left": "60px"});
 	    }
 	}
 });

@@ -72,6 +72,11 @@ div.exp-content {
 ul.items {
 	text-align: left;
 }
+@media only screen and (max-device-width: 568px) {
+  img.logo-resp {
+  	display: none;
+  }
+}
 /* life.html*/
 
 /* knowledge */
