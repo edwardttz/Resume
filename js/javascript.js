@@ -92,7 +92,7 @@ $(document).scroll(function() {
 	if(bodyWidth > 766) {
 		if(y >= start)  {
 	        header.css({"position": "fixed", "top" : "8px"});
-	        main.css({"padding-left": "0px"});
+	        main.css({"padding-left": "15px"});
 	        if(bodyWidth > 1024) {
 	        	main.css({"margin-left": "285px"});
 	        } else {
