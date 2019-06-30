@@ -9,6 +9,7 @@ $(document).ready(function() {
 		footer.css("width", "100%");
 	}
 	var bodyWidth = body.innerWidth();
+	$(".main").css({"margin-left": "0px"});
 	if(bodyWidth < 576) {
 		$(".cfooter").toggleClass('col-10 col-12');
 		$(".link-logo").toggleClass('col-2 col-12');
