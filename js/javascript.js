@@ -18,7 +18,7 @@ $(document).ready(function() {
 		$(".sidenav").addClass('d-none');
 		$(".main").toggleClass('col-9 col-12');
 	}
-	if(bodyWidth > 767 & bodyWidth < 1204) {
+	if(bodyWidth > 767 && bodyWidth < 1204) {
 		$(".main").css({"padding-left": "60px"});
 	}
 	// This is for responsiveness of the modal
@@ -100,7 +100,9 @@ $(document).scroll(function() {
 	    } else {
 	        header.css("position", "relative");
 	        main.css({"margin-left": "0px"});
-	        main.css({"padding-left": "60px"});
+	        if(bodyWidth > 767 && bodyWidth < 1204) {
+				$(".main").css({"padding-left": "60px"});
+			}
 	    }
 	}
 });
