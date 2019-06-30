@@ -78,13 +78,19 @@ $(window).on( "orientationchange", function(event) {
 $(document).scroll(function() {
 	var body = $("body");
 	var y = $(document).scrollTop();
+	var start = $(".main-body").position().top;
 	var bodyWidth = body.innerWidth();
 	var header = $(".sidenav");
 	var main = $(".main");
+
 	if(bodyWidth > 766) {
-		if(y >= 792)  {
+		if(y >= start)  {
 	        header.css({"position": "fixed", "top" : "8px"});
-	        main.css({"margin-left": "285px"});
+	        if(bodyWidth > 1024) {
+	        	main.css({"margin-left": "285px"});
+	        } else {
+	        	main.css({"margin-left": "240px"});
+	        }
 	    } else {
 	        header.css("position", "relative");
 	        main.css({"margin-left": "0px"});
