@@ -2,20 +2,28 @@
 <html lang="en-US">
 <head>
 	<title>Life of Edward</title>
-	<link rel="icon" type="image/png" href="images/e_logo.png">
+	<link rel="icon" type="image/png" href="images/e_logo.png" />
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:locale:alternate" content="en_GB" />
 
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:700,900" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<meta property="og:site_name" content="Life of Edward" />
+	<meta property="og:title" content="Life of Edward" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://edwardttz.github.io/aboutme/" />
+	<meta property="og:image" content="https://edwardttz.github.io/aboutme/images/e_logo.png" />
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:700,900" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+	<link rel="stylesheet" href="css/stylesheet.css" />
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -54,13 +62,13 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="w-100 carousel-img" alt="Me at Train Station" src="images/banner_0.jpg" data-holder-rendered="true">
+				<img class="w-100 carousel-img" alt="Edward at Train Station" src="images/banner_0.jpg" data-holder-rendered="true">
 			</div>
 			<div class="carousel-item">
-				<img class="w-100 carousel-img" alt="Me at Bamboo Forest" src="images/banner_1.jpg" data-holder-rendered="true">
+				<img class="w-100 carousel-img" alt="Edward at Bamboo Forest" src="images/banner_1.jpg" data-holder-rendered="true">
 			</div>
 			<div class="carousel-item">
-				<img class="w-100 carousel-img" alt="Me at Kyoto Shrine" src="images/banner_2.jpg" data-holder-rendered="true">
+				<img class="w-100 carousel-img" alt="Edward at Kyoto Shrine" src="images/banner_2.jpg" data-holder-rendered="true">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#my-picture" role="button" data-slide="prev"></a>
@@ -93,8 +101,8 @@
 			<h4 class="h4-exp">Work Experience</h4>
 			<div class="content-data">
 				<div class="exp-container">
-					<div data-toggle="modal" data-target="#syncordis">
-						<img class="logo logo-resp" src="images/syncordis.png" />
+					<div data-toggle="modal" data-target="#syncordis" onclick="modal_click()">
+						<img class="logo logo-resp" alt="Syncordis Logo" src="images/syncordis.png" />
 						<div >
 							<label class="label bold">Syncordis</label>
 							<br/>
@@ -104,15 +112,15 @@
 						</div>
 					</div>
 					<div class="modal fade" id="syncordis" role="dialog" aria-labelledby="dbsTechExecJD" aria-hidden="true">
-						<div class="modal-dialog modal-lg">
+						<div class="modal-dialog modal-lg" data-size="modal-lg">
 							<div class="modal-content">
 								<div class="modal-body">
 									<button class="close modal_close" data-dismiss="modal"><span>×</span></button>
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo mx-md-4 float-left modal-logo" src="images/syncordis.png" />
-											<div class="float-left text-md-left mt-3 ml-1 title-content">
+											<img class="logo mx-md-4 modal-logo" alt="Syncordis Logo" src="images/syncordis.png" />
+											<div class="text-md-left mt-3 ml-1 title-content">
 												<label class="label bold exp-margin">Syncordis</label>
 												<ul class="items">
 													<li class="fa fa-bookmark pr-3"></li>Singapore Branch
@@ -134,8 +142,8 @@
 					</div>
 				</div>
 				<div class="exp-container">
-					<div data-toggle="modal" data-target="#dbs_bank_tech_exec">
-						<img class="logo logo-resp" src="images/dbs.png" />
+					<div data-toggle="modal" data-target="#dbs_bank_tech_exec" onclick="modal_click()">
+						<img class="logo logo-resp" alt="DBS Logo" src="images/dbs.png" />
 						<div>
 							<label class="label bold">DBS Bank</label>
 							<br/>
@@ -152,8 +160,8 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo mx-md-4 float-left modal-logo" src="images/958.png" />
-											<div class="float-left text-md-left mt-3 ml-1 title-content">
+											<img class="logo mx-md-4 modal-logo" alt="DBS Logo" src="images/958.png" />
+											<div class="text-md-left mt-3 ml-1 title-content">
 												<label class="label bold exp-margin">DBS Bank</label>
 												<ul class="items">
 													<li class="fa fa-bookmark pr-3"></li>Institutional Banking Group Technology
@@ -206,8 +214,8 @@
 					</div>
 				</div>
 				<div class="exp-container">
-					<div data-toggle="modal" data-target="#fca_intern">
-						<img class="logo logo-resp" src="images/fca.png" />
+					<div data-toggle="modal" data-target="#fca_intern" onclick="modal_click()">
+						<img class="logo logo-resp" alt="First Code Academy Logo" src="images/fca.png" />
 						<div>
 							<label class="label bold">First Code Academy</label>
 							<br/>
@@ -224,8 +232,8 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo mx-md-4 float-left modal-logo" src="images/fca.png" />
-											<div class="float-left text-md-left mt-3 ml-1 title-content">
+											<img class="logo mx-md-4 modal-logo" alt="First Code Academy Logo" src="images/fca.png" />
+											<div class="text-md-left mt-3 ml-1 title-content">
 												<label class="label bold exp-margin">First Code Academy</label>
 												<ul class="items">
 													<li class="fa fa-bookmark pr-3"></li>Singapore Office
@@ -269,8 +277,8 @@
 					</div>
 				</div>				
 				<div class="exp-container">
-					<div data-toggle="modal" data-target="#nus_fyp">
-						<img class="logo logo-resp" src="images/nus.png" />
+					<div data-toggle="modal" data-target="#nus_fyp" onclick="modal_click()">
+						<img class="logo logo-resp" alt="NUS Logo" src="images/nus.png" />
 						<div>
 							<label class="label bold">NUS</label>
 							<br/>
@@ -287,8 +295,8 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo mx-md-4 float-left modal-logo" src="images/nus.png" />
-											<div class="float-left text-md-left mt-3 ml-1 title-content">
+											<img class="logo mx-md-4 modal-logo" alt="NUS Logo" src="images/nus.png" />
+											<div class="text-md-left mt-3 ml-1 title-content">
 												<label class="label bold exp-margin">NUS</label>
 												<ul class="items">
 													<li class="fa fa-bookmark pr-3"></li>Electrical & Computer Engineering Department
@@ -324,8 +332,8 @@
 					</div>
 				</div>
 				<div class="exp-container">
-					<div data-toggle="modal" data-target="#nus_webDev">
-						<img class="logo logo-resp" src="images/nus.png" />
+					<div data-toggle="modal" data-target="#nus_webDev" onclick="modal_click()">
+						<img class="logo logo-resp" alt="NUS Logo" src="images/nus.png" />
 						<div>
 							<label class="label bold">NUS</label>
 							<br/>
@@ -342,8 +350,8 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo mx-md-4 float-left modal-logo" src="images/nus.png" />
-											<div class="float-left text-md-left mt-3 ml-1 title-content">
+											<img class="logo mx-md-4 modal-logo" alt="NUS Logo" src="images/nus.png" />
+											<div class="text-md-left mt-3 ml-1 title-content">
 												<label class="label bold exp-margin">NUS</label>
 												<ul class="items">
 													<li class="fa fa-bookmark pr-3"></li>Mathematics Department
@@ -375,8 +383,8 @@
 					</div>
 				</div>
 				<div class="exp-container">
-					<div data-toggle="modal" data-target="#bobo_intern">
-						<img class="logo logo-resp" src="images/bobo.png" />
+					<div data-toggle="modal" data-target="#bobo_intern" onclick="modal_click()">
+						<img class="logo logo-resp" alt="Bobo Logo" src="images/bobo.png" />
 						<div>
 							<label class="label bold">Ha Li Fa Pte Ltd</label>
 							<br/>
@@ -393,8 +401,8 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo mx-md-4 float-left modal-logo" id="bobo_margin" src="images/bobo.png" />
-											<div class="float-left text-md-left mt-3 ml-1 title-content">
+											<img class="logo mx-md-4 modal-logo" alt="Bobo Logo" src="images/bobo.png" />
+											<div class="text-md-left mt-3 ml-1 title-content">
 												<label class="label bold exp-margin">Ha Li Fa Pte Ltd</label>
 												<ul class="items">
 													<li class="fa fa-bookmark pr-3"></li>Information Technology
@@ -436,7 +444,7 @@
 			<div class="content-data">
 				<div class="exp-container">
 					<div data-toggle="modal" data-target="#dsc_desc">
-						<img class="logo logo-resp" src="images/ndsc.png" />
+						<img class="logo logo-resp" alt="NDSC Logo" src="images/ndsc.png" />
 						<div>
 							<label class="label bold">NDSC</label>
 							<br/>
@@ -453,7 +461,7 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo" id="bobo_margin" src="images/ndsc.png" />
+											<img class="logo" alt="NDSC Logo" src="images/ndsc.png" />
 										</div>
 										<label class="label bold">National Data Science Challenge</label>
 										<hr style="clear:both;"/>
@@ -476,7 +484,7 @@
 				</div>
 				<div class="exp-container">
 					<div data-toggle="modal" data-target="#accenture_desc">
-						<img class="logo logo-resp" src="images/accenture.png" />
+						<img class="logo logo-resp" alt="Accenture Logo" src="images/accenture.png" />
 						<div>
 							<label class="label bold">BrainBehindIT</label>
 							<br/>
@@ -493,7 +501,7 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo" id="bobo_margin" src="images/accenture_design.png" />
+											<img class="logo" alt="Accenture Logo" src="images/accenture_design.png" />
 										</div>
 										<label class="label bold">Accenture BrainBehindIT</label>
 										<hr style="clear:both;"/>
@@ -516,7 +524,7 @@
 				</div>
 				<div class="exp-container">
 					<div data-toggle="modal" data-target="#sprinthacks_desc">
-						<img class="logo logo-resp" src="images/sprinthacks.png" />
+						<img class="logo logo-resp" alt="SprintHack Logo" src="images/sprinthacks.png" />
 						<div>
 							<label class="label bold">SprintHack</label>
 							<br/>
@@ -533,7 +541,7 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo" id="bobo_margin" src="images/sprinthacks.png" />
+											<img class="logo" alt="SprintHack Logo" src="images/sprinthacks.png" />
 										</div>
 										<label class="label bold">SprintHack Designathon</label>
 										<hr style="clear:both;"/>
@@ -556,7 +564,7 @@
 				</div>
 				<div class="exp-container">
 					<div data-toggle="modal" data-target="#noc_desc">
-						<img class="logo logo-resp" src="images/noc.png" />
+						<img class="logo logo-resp" alt="NOC Logo" src="images/noc.png" />
 						<div>
 							<label class="label bold">NUS Overseas College</label>
 							<br/>
@@ -573,7 +581,7 @@
 									<br/>
 									<div class="modal_container">
 										<div class="top-description">
-											<img class="logo" id="bobo_margin" src="images/noc.png" />
+											<img class="logo" alt="NOC Logo" src="images/noc.png" />
 										</div>
 										<label class="label bold">NUS Overseas College</label>
 										<hr style="clear:both;"/>
@@ -611,7 +619,7 @@
 			<h4>Education</h4>
 			<div>
 				<div>
-					<img class="mr-3 float-left" src="images/soc.png" />
+					<img class="mr-3 float-left" alt="NUS SOC" src="images/soc.png" />
 					<div class="float-left">
 						<label class="label"><label class="bold">National University of Singapore</label> (2013 till 2017)</label>
 						<ul class="items">
@@ -625,7 +633,7 @@
 				</div>
 				<br style="clear:both;"/>
 				<div>
-					<img class="mr-3 float-left" src="images/innovajc.png" />
+					<img class="mr-3 float-left" alt="Old Innova JC" src="images/innovajc.png" />
 					<div class="float-left">
 						<label class="label"><label class="bold">Innova Junior College</label> (2009 till 2010)</label>
 						<ul class="items">
@@ -741,13 +749,13 @@
 				<div class="col-2 link-logo float-left">
 					<!-- Content -->
 					<a href="https://www.linkedin.com/in/edwardttz/">
-						<img src="images/linkedIn_logo.png" class="mt-1 mb-1 mr-1 footerImg" />
+						<img src="images/linkedIn_logo.png" alt="Linkedin" class="mt-1 mb-1 mr-1 footerImg" />
 					</a>
 					<a href="https://github.com/edwardttz/">
-						<img src="images/github_logo.png" class="mt-1 mb-1 mr-1 ml-1 footerImg" />
+						<img src="images/github_logo.png" alt="Github" class="mt-1 mb-1 mr-1 ml-1 footerImg" />
 					</a>
 					<a href="https://www.instagram.com/teck_ah/">
-						<img src="images/instagram_logo.png" class="mt-1 mb-1 ml-1 footerImg" />
+						<img src="images/instagram_logo.png" alt="Instagram" class="mt-1 mb-1 ml-1 footerImg" />
 					</a>
 				</div>
 			</div>
