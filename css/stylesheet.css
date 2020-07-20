@@ -23,6 +23,10 @@ a.nav-link:hover {
 h4 {
 	font-weight: 600;
 }
+img.logo {
+	width: 140px;
+	height: 117px;
+}
 @media only screen and (min-device-width: 576px) {
   div.link-logo {
   	width: 100%;
